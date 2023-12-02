@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyOuslMap"
+        tools:targetApi="31">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBBL-SVFZp67bvZ7Et6PJSiDhHAsoNCpds" />
+
+        <activity
+            android:name=".MuseumAndBuildingMap"
+            android:exported="false"
+            android:label="@string/title_activity_museum_and_building_map" />
+        <activity
+            android:name=".LabMap"
+            android:exported="false"
+            android:label="@string/title_activity_lab_map" />
+        <activity
+            android:name=".FacultyMap"
+            android:exported="false"
+            android:label="@string/title_activity_faculty_map" />
+        <activity
+            android:name=".FacilityMap"
+            android:exported="false"
+            android:label="@string/title_activity_facility_map" />
+        <activity
+            android:name=".ExameHallMap"
+            android:exported="false"
+            android:label="@string/title_activity_exame_hall_map" />
+        <activity
+            android:name=".DepDiviAndUniMap"
+            android:exported="false"
+            android:label="@string/title_activity_dep_divi_and_uni_map" />
+        <activity
+            android:name=".CanteenMap"
+            android:exported="false"
+            android:label="@string/title_activity_canteen_map" />
+        <activity
+            android:name=".BlockMap"
+            android:exported="false"
+            android:label="@string/title_activity_block_map" />
+        <activity
+            android:name=".ParkMap"
+            android:exported="false"
+            android:label="@string/title_activity_park_map" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MuseumAndBuliding"
+            android:exported="false" />
+        <activity
+            android:name=".Block"
+            android:exported="false" />
+        <activity
+            android:name=".DepDiviAndUnit"
+            android:exported="false" />
+        <activity
+            android:name=".Faculty"
+            android:exported="false" />
+        <activity
+            android:name=".Canteen"
+            android:exported="false" />
+        <activity
+            android:name=".Lab"
+            android:exported="false" />
+        <activity
+            android:name=".ExameHall"
+            android:exported="false" />
+        <activity
+            android:name=".Park"
+            android:exported="false" />
+        <activity
+            android:name=".Facility"
+            android:exported="false" />
+        <activity
+            android:name=".Map"
+            android:exported="false"
+            android:label="@string/title_activity_map" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.NoActionBar" />
+    </application>
+
+</manifest>

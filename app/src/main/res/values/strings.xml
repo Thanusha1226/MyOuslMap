@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyOuslMap</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_park_map">ParkMap</string>
+    <string name="title_activity_block_map">BlockMap</string>
+    <string name="title_activity_canteen_map">CanteenMap</string>
+    <string name="title_activity_dep_divi_and_uni_map">DepDiviAndUniMap</string>
+    <string name="title_activity_exame_hall_map">ExameHallMap</string>
+    <string name="title_activity_facility_map">FacilityMap</string>
+    <string name="title_activity_faculty_map">FacultyMap</string>
+    <string name="title_activity_lab_map">LabMap</string>
+    <string name="title_activity_museum_and_building_map">MuseumAndBuildingMap</string>
+</resources>
