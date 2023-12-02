@@ -8,13 +8,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+
 public class MainActivity extends AppCompatActivity {
     Button facility, park, examHall, lab, canteen,faculty, dep,gym,block, meusiumBuil, toilate;
+
+    SliderView sliderView;
+    int[] images ={R.drawable.canteen,
+            R.drawable.faculty
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         facility =(Button) findViewById(R.id.cartbutton1);
         park =(Button) findViewById(R.id.cartbutton2);
         examHall = (Button) findViewById(R.id.cartbutton3);
@@ -26,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
         block =(Button) findViewById(R.id.cartbutton9);
         meusiumBuil =(Button) findViewById(R.id.cartbutton10);
         toilate =(Button) findViewById(R.id.cartbutton11);
+
+        //code for banner slider
+        sliderView = findViewById(R.id.imageSlider);
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
+
+
         //Navigate codes for faculty
         facility.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toilets();
-                Toast.makeText(MainActivity.this, "Move to Toilets Page", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Move to Map", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -161,7 +181,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Toilets(){
         //code here
-        Intent intent9 = new Intent();
+        Intent intent9 = new Intent(MainActivity.this, ToiletMap.class);
         startActivity(intent9);
     }
 

@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ousl"
     tools:context=".Block">
 
     <TextView
@@ -25,7 +26,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#7fff"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="200dp"
@@ -44,7 +46,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/faculty" />
+                        app:srcCompat="@drawable/block2" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -110,7 +112,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/park"></ImageView>
+                        app:srcCompat="@drawable/block2"></ImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -177,7 +179,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/examehall"></ImageView>
+                        app:srcCompat="@drawable/block2"></ImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -244,7 +246,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/lab"></ImageView>
+                        app:srcCompat="@drawable/block2"></ImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -324,7 +326,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/canteen"></ImageView>
+                        app:srcCompat="@drawable/block2"></ImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -390,7 +392,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/faculty"></ImageView>
+                        app:srcCompat="@drawable/block2"></ImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -445,7 +447,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/dep"></ImageView>
+                        app:srcCompat="@drawable/block2"></ImageView>
 
                     <LinearLayout
                         android:layout_width="match_parent"
